@@ -1,0 +1,10 @@
+.btn {
+  &__arrow--filled {
+    background-color: var(--color-blue-1);
+    color: inherit;
+    text-decoration: none;
+    padding: 0.3rem 1rem;
+    border-radius: 1000px;
+    text-transform: capitalize;
+  }
+}
