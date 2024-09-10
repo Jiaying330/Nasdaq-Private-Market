@@ -1,0 +1,12 @@
+.section__service {
+  &-list {
+    list-style: none;
+  }
+  &-item {
+    border-top: 0.5px solid var(--text-color-2);
+    color: var(--text-color-2);
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}

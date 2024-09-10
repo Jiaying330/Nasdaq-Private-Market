@@ -168,4 +168,4 @@ const tickerItems: tickerItem[] = [
   },
 ];
 
-export { tickerItems };
+export { type tickerItem, tickerItems };

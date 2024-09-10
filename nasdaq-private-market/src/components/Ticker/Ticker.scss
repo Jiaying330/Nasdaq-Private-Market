@@ -1,5 +1,20 @@
 .ticker {
-  height: 5rem;
+  //   height: 5rem;
   width: 100vw;
+  padding: 2rem 0;
   background-color: var(--color-blue-2);
+
+  &__container {
+    display: flex;
+    overflow: hidden;
+    // gap: 10px;
+  }
+}
+
+.disclaimer {
+  color: var(--text-color-2);
+  padding: 0.5rem 20rem;
+  font-size: 0.8rem;
+  line-height: 1.8rem;
+  background-color: var(--color-blue-3);
 }

@@ -38,11 +38,9 @@
     max-width: 872px;
   }
   &__subtitle {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 400;
     font-style: normal;
+    font-weight: 300;
     font-size: 0.9rem;
-    letter-spacing: -0.04em;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -50,6 +48,7 @@
   }
   &__title {
     font-size: 4.5rem;
+    font-weight: 400;
   }
 }
 
