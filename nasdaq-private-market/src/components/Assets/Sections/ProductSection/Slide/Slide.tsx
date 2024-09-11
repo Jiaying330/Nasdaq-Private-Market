@@ -1,9 +1,18 @@
 import { Headline } from "../../../SectionHead/SectionHead";
 import "./Slide.scss";
 
-export default function Slide() {
+export default function Slide({
+  style,
+  disabled,
+}: {
+  style: { transform: string };
+  disabled: boolean;
+}) {
   return (
-    <div className="section__product-slide">
+    <div
+      className={`section__product-slide ${disabled ? "disabled" : ""}`}
+      style={style}
+    >
       <Headline headline="secondmarket&trade;" />
       <div className="section__product-slide-content">
         <div className="section__product-slide-content-left">

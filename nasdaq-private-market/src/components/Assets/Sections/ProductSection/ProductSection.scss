@@ -1,7 +1,6 @@
 .section__product {
   &-slides {
     position: relative;
-    // background-color: var(--color-blue-2);
     height: 33rem;
     &-btns {
       position: absolute;
@@ -24,6 +23,7 @@
       justify-content: center;
       align-items: center;
       transition: all 0.3s ease;
+      border: none;
     }
 
     &-btn:hover {
@@ -35,16 +35,14 @@
       background-color: rgba(255, 255, 255, 0.105);
     }
     &-container {
-      //   background-color: aqua;
-      //   width: 100vw;
       position: relative;
       width: 90%;
-      // padding:
       height: 80%;
-      //   display: flex;
-      //   gap: 2rem;
       margin: 0 auto;
-      //   overflow: visible;
+      & > * {
+        position: absolute;
+        // right: 100%;
+      }
     }
 
     &-progress {
@@ -53,19 +51,33 @@
       list-style: none;
       display: flex;
       color: rgba(255, 255, 255, 0.317);
-      gap: 1.5rem;
       justify-content: flex-end;
-      & > .active {
-        color: white;
+      & li {
         display: flex;
         align-items: center;
         gap: 1.5rem;
+        z-index: 1;
+        & > span {
+          cursor: pointer;
+        }
         &::after {
           content: "";
           height: 1px;
-          width: 2.5rem;
+          width: 0rem;
           background-color: white;
           display: inline-block;
+          transition: all 0.3s ease;
+        }
+        &.active {
+          color: white;
+          &::after {
+            content: "";
+            height: 1px;
+            width: 2.5rem;
+            background-color: white;
+            display: inline-block;
+            margin-right: 1.5rem;
+          }
         }
       }
     }

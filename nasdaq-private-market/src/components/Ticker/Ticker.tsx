@@ -7,9 +7,17 @@ export default function Ticker() {
     <>
       <section className="ticker">
         <div className="ticker__container">
-          {tickerItems.map((tickerItem) => (
-            <TickerItem key={tickerItem.id} item={tickerItem} />
-          ))}
+          <div className="ticker__inner">
+            {tickerItems.map((tickerItem) => (
+              <TickerItem key={tickerItem.id} item={tickerItem} />
+            ))}
+            {tickerItems.map((tickerItem) => (
+              <TickerItem
+                key={tickerItem.id + tickerItems.length}
+                item={tickerItem}
+              />
+            ))}
+          </div>
         </div>
       </section>
       <div className="disclaimer">

@@ -1,4 +1,6 @@
 .section {
   background-color: var(--color-blue-3);
   padding: 6rem 3rem;
+  max-width: 100vw;
+  overflow: hidden;
 }
