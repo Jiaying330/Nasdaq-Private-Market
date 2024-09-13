@@ -1,12 +1,21 @@
-.section__service {
-  &-list {
-    list-style: none;
-  }
-  &-item {
+.accordion {
+  list-style: none;
+
+  &__head {
     border-top: 0.5px solid var(--text-color-2);
     color: var(--text-color-2);
     padding: 1.5rem 0;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  &__item.active &__head {
+    color: white;
+    border-top: 1px solid white;
+    font-size: 1.3rem;
+    & > span {
+      color: var(--text-color-2);
+    }
   }
 }
