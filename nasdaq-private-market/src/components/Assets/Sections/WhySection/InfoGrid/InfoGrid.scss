@@ -1,0 +1,21 @@
+.info {
+  margin-bottom: 1rem;
+  & > * {
+    margin-bottom: 1rem;
+  }
+  &__icon {
+    background-color: var(--color-blue-1);
+    padding: 0.8rem;
+    border: 3px solid var(--color-blue-4);
+    border-radius: 10px;
+    line-height: 0;
+    width: fit-content;
+    & > svg {
+      stroke-width: 1;
+    }
+  }
+  &__content {
+    color: var(--text-color-2);
+    font-size: 0.9rem;
+  }
+}

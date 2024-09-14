@@ -2,6 +2,7 @@
   --color-blue-1: #196ed2;
   --color-blue-2: #0d1722;
   --color-blue-3: #15273a;
+  --color-blue-4: #02428e;
 
   --text-color-2: #b0b0b0;
 
@@ -77,6 +78,13 @@ h2 {
 h3 {
   /* color: white; */
   font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 p {
