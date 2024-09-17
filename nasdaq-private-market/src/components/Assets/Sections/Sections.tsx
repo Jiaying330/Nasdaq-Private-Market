@@ -4,6 +4,7 @@ import "./Section.scss";
 import WhySection from "./WhySection/WhySection";
 import ActionSection from "./ActionSection/ActionSection";
 import InvestorSection from "./InvestorSection/InvestorSection";
+import StatSection from "./StatSection/StatSection";
 
 export default function Sections() {
   return (
@@ -13,6 +14,7 @@ export default function Sections() {
       <WhySection />
       <ActionSection />
       <InvestorSection />
+      <StatSection />
     </>
   );
 }

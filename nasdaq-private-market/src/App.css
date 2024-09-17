@@ -64,6 +64,10 @@ svg {
   display: block;
   max-width: 100%;
 }
+
+/* img {
+  vertical-align: middle;
+} */
 /*
   6. Remove built-in form typography styles
 */
@@ -104,6 +108,12 @@ h4 {
   font-weight: 400;
   letter-spacing: -1px;
   line-height: 1.8rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1rem;
 }
 
 p {
