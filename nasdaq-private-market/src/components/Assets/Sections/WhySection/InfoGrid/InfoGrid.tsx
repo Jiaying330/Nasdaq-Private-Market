@@ -6,10 +6,11 @@ type propType = {
   heading: string;
   infos: string[];
 };
+
 export default function InfoGrid(prop: propType) {
   return (
     <div className="info">
-      <div className="info__icon">
+      <div className="section__icon">
         <prop.icon />
       </div>
       <h4>{prop.heading}</h4>

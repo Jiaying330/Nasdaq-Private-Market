@@ -4,14 +4,14 @@
   }
   &__headline {
     display: flex;
-    color: white;
+    color: inherit;
     align-items: center;
     gap: 1rem;
     text-transform: uppercase;
     font-size: 0.9rem;
     &::before {
       content: "";
-      background-color: white;
+      background-color: currentColor;
       width: 4rem;
       height: 1px;
       display: inline-block;

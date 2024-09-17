@@ -1,0 +1,14 @@
+.section__investor {
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.investors {
+  margin-top: 3rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
