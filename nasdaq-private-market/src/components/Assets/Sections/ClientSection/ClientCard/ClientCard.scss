@@ -1,0 +1,35 @@
+.client-card {
+  cursor: grab;
+  width: 15rem;
+  padding: 2rem;
+  box-shadow: var(--box-shadow-md);
+  border-radius: 10px;
+  & > img {
+    width: 188px;
+    height: 92px;
+    margin-bottom: 45px;
+    object-fit: contain;
+    object-position: center;
+  }
+  & > h6 {
+    margin-bottom: 0.5rem;
+  }
+  & > p {
+    color: #545454;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  & > .pill {
+    padding: 1px 9px;
+    border: 1px solid #eb883c;
+    font-size: 0.8rem;
+    border-radius: 1000px;
+    width: fit-content;
+    color: #545454;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #eb883c;
+    }
+  }
+}

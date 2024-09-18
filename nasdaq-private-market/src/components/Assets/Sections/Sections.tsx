@@ -5,6 +5,7 @@ import WhySection from "./WhySection/WhySection";
 import ActionSection from "./ActionSection/ActionSection";
 import InvestorSection from "./InvestorSection/InvestorSection";
 import StatSection from "./StatSection/StatSection";
+import ClientSection from "./ClientSection/ClientSection";
 
 export default function Sections() {
   return (
@@ -15,6 +16,7 @@ export default function Sections() {
       <ActionSection />
       <InvestorSection />
       <StatSection />
+      <ClientSection />
     </>
   );
 }
