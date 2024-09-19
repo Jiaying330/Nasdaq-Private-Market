@@ -1,0 +1,17 @@
+.network__chart {
+  margin: 0.7rem 0;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  max-height: 200px;
+  font-size: 0.85rem;
+  flex-direction: column;
+  color: var(--text-color-2);
+  & li {
+    margin-bottom: 7px;
+  }
+  & span {
+    font-size: 12px;
+    margin-right: 4px;
+  }
+}

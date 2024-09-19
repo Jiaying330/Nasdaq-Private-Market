@@ -1,0 +1,45 @@
+.graphs {
+  display: flex;
+  color: white;
+  &__col {
+    padding: 12px;
+    &--small {
+      flex: 0 0 33.33%;
+    }
+    &--large {
+      flex: 0 0 66.66%;
+    }
+  }
+
+  &__boxes {
+    margin: -12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: stretch;
+  }
+  &__box {
+    padding: 12px;
+    // height: fit-content;
+    &--large {
+      flex: 0 0 100%;
+    }
+    &--small {
+      flex: 0 0 50%;
+    }
+  }
+}
+
+.partners,
+.industry,
+.valuation,
+.network {
+  background-color: var(--color-blue-2);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow-sm);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
