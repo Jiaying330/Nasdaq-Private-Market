@@ -1,0 +1,23 @@
+.section__insight {
+  color: white;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  &-slider {
+    position: relative;
+    &-container {
+      margin: auto;
+      width: 90%;
+      overflow: hidden;
+
+      &-inner {
+        width: 100%;
+        display: flex;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}

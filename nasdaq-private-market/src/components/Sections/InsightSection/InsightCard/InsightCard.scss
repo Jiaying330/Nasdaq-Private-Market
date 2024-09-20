@@ -1,0 +1,41 @@
+.insight-card {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  flex: 0 0 33.33%;
+  display: flex;
+  flex-direction: column;
+
+  & img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+  }
+  &:hover h4 {
+    text-decoration: underline;
+  }
+  &:hover img {
+    filter: brightness(80%);
+  }
+  & p {
+    color: var(--text-color-2);
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+  }
+
+  & > div {
+    margin-top: auto;
+  }
+
+  & .highlight-link {
+    color: currentColor;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  & .highlight-link:hover {
+    text-decoration: underline;
+  }
+}

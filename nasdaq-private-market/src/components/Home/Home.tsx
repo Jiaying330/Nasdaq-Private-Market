@@ -1,7 +1,7 @@
 import Hero from "../Hero/Hero";
 import Navbar from "../Navbar/Navbar";
 import Ticker from "../Ticker/Ticker";
-import Sections from "../Assets/Sections/Sections";
+import Sections from "../Sections/Sections";
 
 export default function Home() {
   return (

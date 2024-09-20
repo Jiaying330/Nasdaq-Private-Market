@@ -1,5 +1,6 @@
 .btn {
   cursor: pointer;
+
   &__arrow--filled {
     background-color: var(--color-blue-1);
     color: inherit;
@@ -8,6 +9,8 @@
     border-radius: 1000px;
     text-transform: capitalize;
     transition: all 0.3s ease;
+    width: fit-content;
+    height: fit-content;
 
     &:hover {
       background-color: var(--color-blue-4);
