@@ -43,3 +43,10 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.section__data {
+  & > p {
+    color: var(--text-color-2);
+    font-size: 0.8rem;
+  }
+}

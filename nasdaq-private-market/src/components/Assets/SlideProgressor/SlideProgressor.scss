@@ -1,0 +1,36 @@
+.slide-progressor {
+  width: 90%;
+  margin: 2rem auto;
+  list-style: none;
+  display: flex;
+  color: rgba(255, 255, 255, 0.317);
+  justify-content: flex-end;
+  & li {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    z-index: 1;
+    & > span {
+      cursor: pointer;
+    }
+    &::after {
+      content: "";
+      height: 1px;
+      width: 0rem;
+      background-color: white;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+    &.active {
+      color: white;
+      &::after {
+        content: "";
+        height: 1px;
+        width: 2.5rem;
+        background-color: white;
+        display: inline-block;
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}

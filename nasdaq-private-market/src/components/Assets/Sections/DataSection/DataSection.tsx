@@ -50,6 +50,7 @@ export default function DataSection() {
           </div>
         </div>
       </div>
+      <p>Data as of 2023</p>
     </section>
   );
 }

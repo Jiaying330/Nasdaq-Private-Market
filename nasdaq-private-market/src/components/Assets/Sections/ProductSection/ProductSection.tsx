@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./ProductSection.scss";
 import SectionHead from "../../SectionHead/SectionHead";
 import Slide from "./Slide/Slide";
+import SlideProgressor from "../../SlideProgressor/SlideProgressor";
 
 export default function ProductSection() {
   const [index, setIndex] = useState(0);
@@ -13,19 +14,18 @@ export default function ProductSection() {
     if (index < 4) setIndex((prev) => prev + 1);
   }
   function handleNumberOnClick(number: number) {
-    console.log("number");
     setIndex(number);
   }
-  useEffect(() => {
-    const listItem = document.querySelector(
-      ".section__product-slides-progress li"
-    );
-    if (listItem) {
-      listItem.addEventListener("click", () =>
-        console.log("Vanilla JS Clicked!")
-      );
-    }
-  }, []);
+  // useEffect(() => {
+  //   const listItem = document.querySelector(
+  //     ".section__product-slides-progress li"
+  //   );
+  //   if (listItem) {
+  //     listItem.addEventListener("click", () =>
+  //       console.log("Vanilla JS Clicked!")
+  //     );
+  //   }
+  // }, []);
 
   return (
     <section className="section section__product">
@@ -71,13 +71,11 @@ export default function ProductSection() {
             &#8594;
           </button>
         </div>
-        <ul className="section__product-slides-progress">
-          {[...Array(5)].map((_, i) => (
-            <li key={i} className={index === i ? "active" : ""}>
-              <span onClick={() => handleNumberOnClick(i)}>0{i + 1}</span>
-            </li>
-          ))}
-        </ul>
+        <SlideProgressor
+          count={5}
+          currIndex={index}
+          handleNumberOnClick={handleNumberOnClick}
+        />
       </div>
     </section>
   );

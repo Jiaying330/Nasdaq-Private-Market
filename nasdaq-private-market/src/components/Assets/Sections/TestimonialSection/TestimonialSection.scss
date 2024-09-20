@@ -1,0 +1,12 @@
+.section__testimonial {
+  color: white;
+  &-sliders {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1.5rem;
+    transition: all 0.3s ease-out;
+    & > * {
+      flex-shrink: 0;
+    }
+  }
+}
