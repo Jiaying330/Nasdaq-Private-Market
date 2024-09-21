@@ -11,10 +11,10 @@ export default function ClientSection() {
         <div className="ticker__container">
           <div className="ticker__inner">
             {clientItems.map((clientItem) => (
-              <ClientCard client={clientItem} />
+              <ClientCard key={clientItem.id} client={clientItem} />
             ))}
             {clientItems.map((clientItem) => (
-              <ClientCard client={clientItem} />
+              <ClientCard key={"1-" + clientItem.id} client={clientItem} />
             ))}
           </div>
         </div>

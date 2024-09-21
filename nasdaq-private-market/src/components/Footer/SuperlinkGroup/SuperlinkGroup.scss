@@ -1,0 +1,51 @@
+.superlinks {
+  display: flex;
+  gap: 2rem;
+  margin-top: 4rem;
+  & > div:nth-child(2) > .menu__lists {
+    // width: 40rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    // background-color: beige;
+  }
+}
+
+.menu {
+  list-style: none;
+  //   margin-right: 5rem;
+  overflow: hidden;
+  & a {
+    text-decoration: none;
+  }
+  & ul {
+    list-style: none;
+    & li {
+      font-size: 0.7rem;
+      margin-bottom: 0.3rem;
+    }
+    & a {
+      color: var(--text-color-2);
+      font-size: 0.85rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  &__title {
+    color: white;
+    font-size: 1rem;
+  }
+
+  &__lists {
+    margin-top: 1.5rem;
+    & > ul {
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__list {
+    max-width: 15rem;
+  }
+}

@@ -15,26 +15,22 @@ export default function SlideController({
 }) {
   return (
     <div className="controller-btns">
-      {/* <> */}
       <button
-        className={`controller-btn controller-btn-left${
+        className={`controller-btn controller-btn-left ${
           currIndex === 0 ? "disabled" : ""
         }`}
         onClick={handleLeftBtnOnClick}
       >
-        {/* &#8592; */}
         <WestOutlinedIcon />
       </button>
       <button
-        className={`controller-btn controller-btn-right${
+        className={`controller-btn controller-btn-right ${
           currIndex === count - 1 ? "disabled" : ""
         }`}
         onClick={handleRightBtnOnClick}
       >
-        {/* &#8594; */}
         <EastOutlinedIcon />
       </button>
-      {/* </> */}
     </div>
   );
 }

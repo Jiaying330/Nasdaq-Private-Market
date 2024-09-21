@@ -15,8 +15,8 @@ export default function InfoGrid(prop: propType) {
       </div>
       <h4>{prop.heading}</h4>
       <ul className="info__content">
-        {prop.infos.map((info) => (
-          <li>{info}</li>
+        {prop.infos.map((info, index) => (
+          <li key={index}>{info}</li>
         ))}
       </ul>
     </div>

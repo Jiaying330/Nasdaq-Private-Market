@@ -18,7 +18,7 @@ export default function TestimonialSection() {
         style={{ transform: `translateX(${(0 - index) * 102}%)` }}
       >
         {testimonials.map((testimonial) => (
-          <TestimonialCard testimonial={testimonial} />
+          <TestimonialCard key={testimonial.id} testimonial={testimonial} />
         ))}
       </div>
       <SlideProgressor
