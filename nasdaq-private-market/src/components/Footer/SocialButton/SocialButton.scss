@@ -10,9 +10,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    transition: all 0.3s ease;
     & > img {
       height: 23px;
       width: 22px;
+    }
+    &:hover {
+      background-color: var(--color-blue-4);
     }
   }
 }
