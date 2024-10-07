@@ -1,0 +1,25 @@
+.grid__item--1 {
+  cursor: pointer;
+  display: flex;
+  background-color: var(--color-blue-2);
+  padding: 1.5rem 1rem;
+  border: 1px solid var(--text-color-1);
+  border-radius: 10px;
+  gap: 5px;
+  transition: all 0.3s ease;
+  & h6 {
+    font-size: 0.9rem;
+    padding-bottom: 5px;
+  }
+  & svg {
+    color: var(--color-blue-1);
+  }
+  & p {
+    font-size: 0.7rem;
+    color: var(--text-color-2);
+  }
+  &:hover {
+    background-color: var(--color-blue-3);
+    border: 1px solid var(--color-blue-3);
+  }
+}

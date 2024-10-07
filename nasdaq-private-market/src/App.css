@@ -5,7 +5,7 @@
   --color-blue-4: #02428e;
 
   --background-5: #17293d;
-
+  --text-color-1: #5d6977;
   --text-color-2: #b0b0b0;
 
   --gradient-1: radial-gradient(
@@ -65,6 +65,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  line-height: 0;
 }
 
 /* img {
