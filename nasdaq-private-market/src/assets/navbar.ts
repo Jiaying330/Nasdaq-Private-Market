@@ -109,4 +109,5 @@ export {
   dropdown2Items_2,
   dropdown2Items_3,
   dropdown2Items_4,
+  type dropdown2Item,
 };
